@@ -48,12 +48,6 @@ struct Node
 class AdjacencyList
 {
 public:
-	// ** NOTE **
-	// Someone asked Karla in lecture how allocate the array and she said to look at
-	// Lab 8 for guidance, so I used that same setup below:
-	// The listSize value is declared in the constructor, and is intended to be
-	// edited by the client user in the header file.
-	//
 	// Adjust the listSize to accommodate for the number of courses
 	// Constructor
 	/*
@@ -87,12 +81,6 @@ public:
 	// take AFTER taking a certain course, (instead of listing the
 	// prerequisites for a course) the parent of the connection 
 	// is actually the prerequisiteCRN and the child is the baseCRN
-	//
-	// ** NOTE **
-	// Karla let me know that I can expect that courses will not be entered cyclically,
-	// so I did not program anything to handle that situation
-	//	ie. if course A is set as prerequisite for course B, then I can assume that
-	//	course B won't be entered as a prerequisite for course A, etc, so
 	//
 	// Add a connection between courses
 	/*
